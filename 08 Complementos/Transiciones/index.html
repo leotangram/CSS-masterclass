@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      button {
+        height: 50px;
+        width: 200px;
+        background: red;
+        transition: background 3s ease 0.5s;
+      }
+
+      button:hover {
+        background: blue;
+      }
+
+      .Top {
+        background-color: lightblue;
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+        transition: opacity 2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .Bottom {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+      }
+
+      .Top:hover {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click</button>
+    <div>
+      <img
+        class="Bottom"
+        src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/troll-face-1/sticker_8.png?655b17067df1601e75cc33e267fe806f"
+      />
+      <div class="Top"><strong>Transiciones</strong></div>
+    </div>
+  </body>
+</html>

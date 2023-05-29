@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: girar 2s linear infinite;
+      }
+
+      @keyframes girar {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hi!</div>
+  </body>
+</html>
+
+<!-- Las animaciones son como las transiciones pero permiten comportamientos más complejo y se merecen sus propio curso. Primero se crea la animación con la palabra @keyframes y se le da un nombre.
+
+Este es un ejemplo:
+
+@keyframes nombre {
+
+  0% { color: black; }
+
+  50% { color: white; }
+
+  100% { color: red; }
+
+}
+
+Después se aplica este nombre al selector de esta manera:
+
+div {
+  animation-name:nombre;
+  animation-duration: 4s;
+}
+
+Esto anima el texto de la etiqueta div de blanco a negro a rojo en 4 segundos. Pruébalo en tu navegador!
+
+Aquí tienes un recurso útil en inglés:
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation -->
